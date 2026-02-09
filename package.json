@@ -1,0 +1,29 @@
+{
+    "name": "esbuild-duckdb-virtual",
+    "private": true,
+    "version": "4.1.1",
+    "type": "module",
+    "description": "Example of a custom VirtualServer running in a Web Worker",
+    "scripts": {
+        "build": "node build.js",
+        "start": "node build.js && node server.mjs"
+    },
+    "keywords": [],
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@perspective-dev/client": "workspace:^",
+        "@perspective-dev/server": "workspace:^",
+        "@perspective-dev/viewer": "workspace:^",
+        "@perspective-dev/viewer-d3fc": "workspace:^",
+        "@perspective-dev/viewer-datagrid": "workspace:^",
+        "@duckdb/duckdb-wasm": "catalog:",
+        "@duckdb/duckdb-wasm-shell": "catalog:",
+        "regular-layout": "catalog:",
+        "superstore-arrow": "catalog:",
+        "xterm": "catalog:"
+    },
+    "devDependencies": {
+        "esbuild": "catalog:",
+        "zx": "catalog:"
+    }
+}
