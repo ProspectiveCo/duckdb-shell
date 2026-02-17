@@ -16,11 +16,17 @@
                 overflow: hidden;
                 position: relative;
                 padding:24px;
-
             }
 
-            .xterm-viewport {
-                overflow-y: auto !important;
+            #version {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                z-index: 100;
+                color: white;
+                font-family: monospace;
+                background-color: rgba(40, 42, 54, 0.8);
+                padding: 12px;
             }
 
             perspective-workspace {
@@ -45,7 +51,9 @@
     </head>
     <body>
          <regular-layout id="layout">
-            <div id="shell-container" name="sql"></div>
+            <div id="shell-container" name="sql">
+                <span id="version">4.2.0-nightly-6161af</span>
+            </div>
             <perspective-workspace id="query" name="query"></perspective-workspace>
         </regular-layout>
     </body>
